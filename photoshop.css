@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", serif;
+}
+.main_box{
+    background:url(cameraMan.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.btn1{
+    position: fixed;
+    font-size: 27px;
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    left: 20px;
+    line-height: 60px;/*it means distance between two line of text*/
+}
+
+.btn1:hover{
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.754);
+}
+
+.sidebar{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow:0px 0px 20px rgba(231, 225, 225, 0.714);
+    transition: linear 0.3s;
+}
+.sidebar .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    height: 60px;
+    padding-bottom: 20px;
+    transition: ease-in-out 0.4s;
+}
+.sidebar .logo:hover{
+    box-shadow: 0px 2px 10px white;
+}
+.sidebar .logo a{position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    top: 20px;
+    left: 20px;
+    font-weight:500; 
+}
+
+.sidebar .btn2{
+    position: absolute; 
+    top: 10px;
+    left: 88%;
+    font-size: 20px;
+    font-weight:900;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.711);
+}
+.sidebar .btn2:hover{
+    font-size: 22px;
+    top: 9.5px;
+    color: rgba(255, 255, 255, 0.487);
+}
+
+.sidebar .menu{
+    position: absolute;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.646);
+    top: 80px;
+    font-size: 20px;
+}
+ 
+.sidebar .menu li{
+    margin-top: 20px;
+    padding: 10px 20px;
+   /* box-shadow: 0px 0px 10px white;  */
+   transition: ease-in-out 0.4s;
+}
+.sidebar .menu li:hover{
+     box-shadow: 0px 0px 10px white;
+}
+
+.sidebar .menu li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.sidebar .menu li i{
+    font-size: 20px;
+}
+.sidebar .menu li i:hover{
+    font-size: 22px;
+}
+
+
+.sidebar .social{
+    position: absolute;
+    bottom:40px;
+    left: 35px;
+}
+.sidebar .social a{
+    margin: 0px 5px;
+    color: rgba(255, 255, 255, 0.744);
+    font-size: 25px;
+}
+.sidebar .social i:hover{
+    transform:scale(1.1);
+    color: rgb(255, 255, 255);
+    transition: ease-in 0.2s;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+left:0px;
+    
+}
+#check:checked ~ .btn1{
+    opacity:0;
+        
+}
+#check:checked ~ .logobar .logomain{
+    opacity: 0;
+}
+
+#check:checked ~ .products h3{
+     display: none;
+}
+
+.products{
+     display: flex;
+    flex-wrap:wrap;
+    margin-top: 60px;
+    width: 100vw;;
+}
+.countainer{
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 300px;
+    width:300px;
+    text-align: center;
+    color: rgb(223, 219, 219);
+    border: #333333 2px solid;
+    border-radius: 20px;
+    background-color: rgba(54, 50, 52, 0.655);
+}
+.countainer:hover{
+    height: 302px;
+    width: 302px;
+    box-shadow: 5px 5px 20px whitesmoke;
+    transition: 0.2s ease;
+}
+.countainer img{
+    margin: 10px;
+    height: 150px;
+    width:150px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+.countainer img:hover{
+    height: 153px;
+    width:153px;
+    box-shadow:2px 2px 14px white;
+    transition: 0.2s ease-in-out;
+
+}
+button{
+    text-align: center;
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 700;
+    background-color: #FF5722;;
+    border: 2px #FF5722 solid;
+}
+button:hover{
+    width: 255px;
+    transition: 0.2s ease-in-out;
+    font-size:15px;
+}
+.logobar{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    background-color: #2C2C2C ;
+    height: 60px;
+    width: 100vw;
+    border-bottom: 2px grey solid;
+    box-shadow: 0 0 10px grey;
+
+}
+.logomain{
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 50px;
+    left: 80px;
+
+    border: 1px grey solid;;
+    border-radius:0px;
+
+}
+.listing{
+    position:absolute;
+    top: 60px;
+    margin: 50px;
+}
+.listing:hover{
+    font-size: 20px;
+}
+
+.countainer button a{
+    color: black;
+    text-decoration: none;
+}
